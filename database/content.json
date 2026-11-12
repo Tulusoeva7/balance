@@ -1,0 +1,1194 @@
+{
+  "questions": [
+    {
+      "key": "occupation",
+      "section": "about",
+      "label": "Как проходит ваш день?",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "office",
+          "label": "Работа в офисе"
+        },
+        {
+          "value": "remote",
+          "label": "Удалённая работа"
+        },
+        {
+          "value": "study",
+          "label": "Учёба"
+        },
+        {
+          "value": "mixed",
+          "label": "Работа и учёба"
+        },
+        {
+          "value": "other",
+          "label": "Другое"
+        }
+      ]
+    },
+    {
+      "key": "hours",
+      "section": "work",
+      "label": "Сколько часов в обычный день вы проводите за компьютером?",
+      "type": "single",
+      "required": true,
+      "why": "Продолжительность работы помогает подобрать реалистичный ритм перерывов и объём небольших действий.",
+      "options": [
+        {
+          "value": "2",
+          "label": "До 2 часов"
+        },
+        {
+          "value": "4",
+          "label": "2–4 часа"
+        },
+        {
+          "value": "6",
+          "label": "4–6 часов"
+        },
+        {
+          "value": "8",
+          "label": "6–8 часов"
+        },
+        {
+          "value": "9",
+          "label": "Больше 8 часов"
+        },
+        {
+          "value": "varies",
+          "label": "По-разному"
+        }
+      ]
+    },
+    {
+      "key": "work_days",
+      "section": "work",
+      "label": "В какие дни вы обычно работаете или учитесь?",
+      "type": "multi",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "1",
+          "label": "Пн"
+        },
+        {
+          "value": "2",
+          "label": "Вт"
+        },
+        {
+          "value": "3",
+          "label": "Ср"
+        },
+        {
+          "value": "4",
+          "label": "Чт"
+        },
+        {
+          "value": "5",
+          "label": "Пт"
+        },
+        {
+          "value": "6",
+          "label": "Сб"
+        },
+        {
+          "value": "7",
+          "label": "Вс"
+        }
+      ]
+    },
+    {
+      "key": "schedule",
+      "section": "work",
+      "label": "Ваш график",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "stable",
+          "label": "Примерно одинаковый"
+        },
+        {
+          "value": "variable",
+          "label": "Меняется каждый день"
+        }
+      ]
+    },
+    {
+      "key": "start_time",
+      "section": "work",
+      "label": "Примерное начало работы",
+      "type": "time",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "when": {
+        "key": "schedule",
+        "equals": "stable"
+      }
+    },
+    {
+      "key": "end_time",
+      "section": "work",
+      "label": "Примерное окончание работы",
+      "type": "time",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "when": {
+        "key": "schedule",
+        "equals": "stable"
+      }
+    },
+    {
+      "key": "continuous",
+      "section": "work",
+      "label": "Как долго вы обычно работаете за компьютером, почти не отвлекаясь?",
+      "type": "single",
+      "required": true,
+      "why": "Если непрерывные периоды длинные, система предложит более понятный ритм коротких пауз.",
+      "options": [
+        {
+          "value": "30",
+          "label": "До 30 минут"
+        },
+        {
+          "value": "60",
+          "label": "30–60 минут"
+        },
+        {
+          "value": "120",
+          "label": "1–2 часа"
+        },
+        {
+          "value": "180",
+          "label": "Больше 2 часов"
+        },
+        {
+          "value": "varies",
+          "label": "По-разному"
+        }
+      ]
+    },
+    {
+      "key": "break_barriers",
+      "section": "work",
+      "label": "Что чаще всего мешает сделать паузу раньше?",
+      "type": "multi",
+      "required": true,
+      "why": "Это помогает сделать напоминания реалистичнее: например, не просто советовать перерыв, а привязать его к завершению задачи.",
+      "options": [
+        {
+          "value": "forget",
+          "label": "Забываю"
+        },
+        {
+          "value": "focus",
+          "label": "Увлекаюсь задачей"
+        },
+        {
+          "value": "flow",
+          "label": "Не хочу терять концентрацию"
+        },
+        {
+          "value": "schedule",
+          "label": "Работа или учёба не позволяют прерваться"
+        },
+        {
+          "value": "need",
+          "label": "Не чувствую необходимости"
+        },
+        {
+          "value": "none",
+          "label": "Обычно делаю паузы вовремя"
+        }
+      ]
+    },
+    {
+      "key": "device",
+      "section": "place",
+      "label": "Какие устройства вы используете?",
+      "type": "multi",
+      "required": true,
+      "why": "Рекомендации для ноутбука, монитора и мобильного устройства отличаются.",
+      "options": [
+        {
+          "value": "laptop",
+          "label": "Ноутбук"
+        },
+        {
+          "value": "desktop",
+          "label": "Стационарный компьютер"
+        },
+        {
+          "value": "tablet",
+          "label": "Планшет"
+        },
+        {
+          "value": "phone",
+          "label": "Смартфон"
+        }
+      ]
+    },
+    {
+      "key": "primary_device",
+      "section": "place",
+      "label": "На каком устройстве проходит большая часть работы?",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "laptop",
+          "label": "Ноутбук"
+        },
+        {
+          "value": "desktop",
+          "label": "Компьютер"
+        },
+        {
+          "value": "tablet",
+          "label": "Планшет"
+        },
+        {
+          "value": "phone",
+          "label": "Смартфон"
+        }
+      ],
+      "when": {
+        "key": "device",
+        "count_greater": 1
+      }
+    },
+    {
+      "key": "screens",
+      "section": "place",
+      "label": "Сколько экранов вы используете одновременно?",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "1",
+          "label": "Один"
+        },
+        {
+          "value": "2",
+          "label": "Два"
+        },
+        {
+          "value": "3",
+          "label": "Три и больше"
+        }
+      ]
+    },
+    {
+      "key": "external_screen",
+      "section": "place",
+      "label": "Подключаете внешний монитор?",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Да"
+        },
+        {
+          "value": "no",
+          "label": "Нет"
+        },
+        {
+          "value": "unsure",
+          "label": "Не уверен(а)"
+        }
+      ],
+      "when": {
+        "key": "device",
+        "contains": "laptop"
+      }
+    },
+    {
+      "key": "screen_height",
+      "section": "place",
+      "label": "Где находится верхняя часть основного экрана?",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "eye",
+          "label": "Примерно на уровне глаз"
+        },
+        {
+          "value": "low",
+          "label": "Ниже — часто смотрю вниз"
+        },
+        {
+          "value": "high",
+          "label": "Выше — поднимаю голову"
+        },
+        {
+          "value": "unsure",
+          "label": "Не знаю"
+        }
+      ],
+      "hint": "Если не уверены, выберите «Не знаю» — позже можно проверить положение экрана по короткой инструкции."
+    },
+    {
+      "key": "screen_position",
+      "section": "place",
+      "label": "Основной экран расположен",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "front",
+          "label": "Прямо передо мной"
+        },
+        {
+          "value": "side",
+          "label": "Сбоку — поворачиваюсь"
+        },
+        {
+          "value": "varies",
+          "label": "Положение меняется"
+        }
+      ]
+    },
+    {
+      "key": "screen_distance",
+      "section": "place",
+      "label": "Насколько близко вы смотрите на экран?",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "comfortable",
+          "label": "Текст виден без наклона вперёд"
+        },
+        {
+          "value": "close",
+          "label": "Приходится приближаться"
+        },
+        {
+          "value": "unsure",
+          "label": "Не знаю"
+        }
+      ]
+    },
+    {
+      "key": "stand",
+      "section": "place",
+      "label": "Есть ли подставка для ноутбука или планшета?",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Да"
+        },
+        {
+          "value": "no",
+          "label": "Нет"
+        },
+        {
+          "value": "unsure",
+          "label": "Не уверен(а)"
+        }
+      ],
+      "when": {
+        "key": "device",
+        "any": [
+          "laptop",
+          "tablet"
+        ]
+      }
+    },
+    {
+      "key": "keyboard",
+      "section": "place",
+      "label": "Используете отдельную клавиатуру?",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Да"
+        },
+        {
+          "value": "no",
+          "label": "Нет"
+        },
+        {
+          "value": "unsure",
+          "label": "Не уверен(а)"
+        }
+      ],
+      "when": {
+        "key": "device",
+        "any": [
+          "laptop",
+          "tablet",
+          "desktop"
+        ]
+      }
+    },
+    {
+      "key": "mouse",
+      "section": "place",
+      "label": "Чем управляете указателем?",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "mouse",
+          "label": "Мышью"
+        },
+        {
+          "value": "trackpad",
+          "label": "Тачпадом"
+        },
+        {
+          "value": "touch",
+          "label": "Сенсорным экраном"
+        },
+        {
+          "value": "other",
+          "label": "Другим устройством"
+        }
+      ]
+    },
+    {
+      "key": "hands",
+      "section": "place",
+      "label": "Как расположены руки при работе?",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "supported",
+          "label": "Предплечья имеют опору, кисти без заметного перегиба"
+        },
+        {
+          "value": "unsupported",
+          "label": "Руки без опоры"
+        },
+        {
+          "value": "bent",
+          "label": "Кисти приходится перегибать"
+        },
+        {
+          "value": "unsure",
+          "label": "Не знаю"
+        }
+      ]
+    },
+    {
+      "key": "chair",
+      "section": "place",
+      "label": "Как обычно устроено рабочее место?",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "office",
+          "label": "Офисное кресло"
+        },
+        {
+          "value": "chair",
+          "label": "Обычный стул"
+        },
+        {
+          "value": "sofa",
+          "label": "Диван или мягкое кресло"
+        },
+        {
+          "value": "stool",
+          "label": "Табурет"
+        },
+        {
+          "value": "standing",
+          "label": "Работаю стоя"
+        },
+        {
+          "value": "varies",
+          "label": "Меняю места"
+        }
+      ]
+    },
+    {
+      "key": "back_support",
+      "section": "place",
+      "label": "Есть ли комфортная опора для спины?",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Да"
+        },
+        {
+          "value": "no",
+          "label": "Нет"
+        },
+        {
+          "value": "unsure",
+          "label": "Не уверен(а)"
+        }
+      ],
+      "when": {
+        "key": "chair",
+        "not": "standing"
+      }
+    },
+    {
+      "key": "feet_support",
+      "section": "place",
+      "label": "Когда сидите, стопы опираются на пол или подставку?",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Да"
+        },
+        {
+          "value": "no",
+          "label": "Нет"
+        },
+        {
+          "value": "unsure",
+          "label": "Не уверен(а)"
+        }
+      ],
+      "when": {
+        "key": "chair",
+        "not": "standing"
+      }
+    },
+    {
+      "key": "leg_space",
+      "section": "place",
+      "label": "Можно ли свободно менять положение ног?",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Да"
+        },
+        {
+          "value": "no",
+          "label": "Нет"
+        },
+        {
+          "value": "unsure",
+          "label": "Не уверен(а)"
+        }
+      ]
+    },
+    {
+      "key": "glare",
+      "section": "screen",
+      "label": "Есть ли блики или неудобный свет?",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Да"
+        },
+        {
+          "value": "no",
+          "label": "Нет"
+        },
+        {
+          "value": "unsure",
+          "label": "Не уверен(а)"
+        }
+      ]
+    },
+    {
+      "key": "eye_fatigue",
+      "section": "screen",
+      "label": "После продолжительной работы за экраном замечаете ли вы усталость или дискомфорт в глазах?",
+      "type": "single",
+      "required": true,
+      "why": "Если такие ощущения появляются, в план можно добавить короткие паузы именно от непрерывного просмотра экрана.",
+      "options": [
+        {
+          "value": "never",
+          "label": "Нет"
+        },
+        {
+          "value": "sometimes",
+          "label": "Иногда"
+        },
+        {
+          "value": "often",
+          "label": "Часто"
+        },
+        {
+          "value": "unsure",
+          "label": "Не обращал(а) внимания"
+        }
+      ]
+    },
+    {
+      "key": "eye_symptoms",
+      "section": "screen",
+      "label": "Что именно вы обычно замечаете?",
+      "type": "multi",
+      "required": true,
+      "why": "Ответ помогает точнее объяснить рекомендацию. Он не используется для постановки диагноза.",
+      "options": [
+        {
+          "value": "dry",
+          "label": "Сухость или дискомфорт"
+        },
+        {
+          "value": "tired",
+          "label": "Усталость глаз"
+        },
+        {
+          "value": "look_away",
+          "label": "Хочется отвести взгляд"
+        },
+        {
+          "value": "squint",
+          "label": "Начинаю щуриться"
+        },
+        {
+          "value": "focus",
+          "label": "Сложнее концентрироваться на экране"
+        },
+        {
+          "value": "blur",
+          "label": "Затуманивание зрения"
+        },
+        {
+          "value": "other",
+          "label": "Другое"
+        }
+      ],
+      "when": {
+        "key": "eye_fatigue",
+        "not": "never"
+      }
+    },
+    {
+      "key": "vision_change",
+      "section": "screen",
+      "label": "Есть ли новое или внезапное ухудшение зрения?",
+      "type": "single",
+      "required": true,
+      "why": "При новом ухудшении зрения полезнее очная консультация, чем подбор упражнений.",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Да"
+        },
+        {
+          "value": "no",
+          "label": "Нет"
+        },
+        {
+          "value": "unsure",
+          "label": "Не уверен(а)"
+        }
+      ],
+      "when": {
+        "key": "eye_symptoms",
+        "contains": "blur"
+      }
+    },
+    {
+      "key": "activity",
+      "section": "habits",
+      "label": "Что вы обычно делаете во время короткого перерыва?",
+      "type": "multi",
+      "required": true,
+      "why": "Так система не будет предлагать действия, которые вы уже регулярно выполняете, и сможет подсказать более подходящий вариант паузы.",
+      "options": [
+        {
+          "value": "walk",
+          "label": "Встаю или немного хожу"
+        },
+        {
+          "value": "move",
+          "label": "Делаю небольшую разминку"
+        },
+        {
+          "value": "eyes",
+          "label": "Отвожу взгляд от экрана"
+        },
+        {
+          "value": "phone",
+          "label": "Переключаюсь на телефон"
+        },
+        {
+          "value": "sit",
+          "label": "Остаюсь сидеть"
+        },
+        {
+          "value": "none",
+          "label": "Обычно перерывов нет"
+        }
+      ]
+    },
+    {
+      "key": "position_changes",
+      "section": "habits",
+      "label": "Как часто во время работы вы меняете положение тела?",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает решить, нужны ли в плане подсказки о смене положения во время продолжительной работы.",
+      "options": [
+        {
+          "value": "often",
+          "label": "Часто"
+        },
+        {
+          "value": "sometimes",
+          "label": "Иногда"
+        },
+        {
+          "value": "rare",
+          "label": "Редко — могу долго сидеть почти неподвижно"
+        },
+        {
+          "value": "unsure",
+          "label": "Не обращал(а) внимания"
+        }
+      ]
+    },
+    {
+      "key": "sleep",
+      "section": "habits",
+      "label": "Насколько энергичным должен быть ваш план в обычный рабочий день?",
+      "type": "single",
+      "required": true,
+      "why": "Ответ влияет только на объём плана, а не используется для оценки здоровья.",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Обычный: несколько коротких действий"
+        },
+        {
+          "value": "no",
+          "label": "Минимальный: только самое необходимое"
+        },
+        {
+          "value": "unsure",
+          "label": "Пока не знаю"
+        }
+      ]
+    },
+    {
+      "key": "goals",
+      "section": "goals",
+      "label": "Что вы хотите изменить в первую очередь?",
+      "type": "multi",
+      "required": true,
+      "why": "Цели определяют приоритеты плана: система не должна навязывать одинаковые действия всем пользователям.",
+      "options": [
+        {
+          "value": "breaks",
+          "label": "Регулярнее делать перерывы"
+        },
+        {
+          "value": "movement",
+          "label": "Больше двигаться во время рабочего дня"
+        },
+        {
+          "value": "comfort",
+          "label": "Лучше следить за самочувствием"
+        },
+        {
+          "value": "exercises",
+          "label": "Регулярно выполнять короткие упражнения"
+        },
+        {
+          "value": "workplace",
+          "label": "Улучшить рабочее место"
+        },
+        {
+          "value": "posture",
+          "label": "Лучше контролировать положение тела"
+        },
+        {
+          "value": "eyes",
+          "label": "Комфортнее работать с экраном"
+        }
+      ],
+      "max_choices": 3,
+      "hint": "Выберите до трёх целей — так первоначальный план останется небольшим и выполнимым."
+    },
+    {
+      "key": "available_minutes",
+      "section": "preferences",
+      "label": "Сколько времени вы готовы выделять на короткие упражнения в обычный рабочий день?",
+      "type": "single",
+      "required": true,
+      "why": "Система ограничит объём упражнений этим временем, чтобы план оставался реалистичным.",
+      "options": [
+        {
+          "value": "2",
+          "label": "2 минуты"
+        },
+        {
+          "value": "5",
+          "label": "5 минут"
+        },
+        {
+          "value": "10",
+          "label": "10 минут"
+        }
+      ]
+    },
+    {
+      "key": "break_interval",
+      "section": "preferences",
+      "label": "Какой интервал напоминаний вам удобен?",
+      "type": "single",
+      "required": true,
+      "why": "Можно изменить позже. Интервал — предпочтение пользователя, а не медицинская норма.",
+      "options": [
+        {
+          "value": "30",
+          "label": "30 минут"
+        },
+        {
+          "value": "45",
+          "label": "45 минут"
+        },
+        {
+          "value": "60",
+          "label": "60 минут"
+        }
+      ]
+    },
+    {
+      "key": "break_minutes",
+      "section": "preferences",
+      "label": "Продолжительность перерыва",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "2",
+          "label": "2 минуты"
+        },
+        {
+          "value": "3",
+          "label": "3 минуты"
+        },
+        {
+          "value": "5",
+          "label": "5 минут"
+        }
+      ]
+    },
+    {
+      "key": "notification",
+      "section": "preferences",
+      "label": "Хотите получать напоминания о перерывах во время работы?",
+      "type": "single",
+      "required": true,
+      "why": "Напоминания используются только во время запущенного таймера работы.",
+      "options": [
+        {
+          "value": "visual",
+          "label": "На экране приложения"
+        },
+        {
+          "value": "sound",
+          "label": "На экране и звуком"
+        },
+        {
+          "value": "browser",
+          "label": "Уведомлением устройства"
+        }
+      ]
+    },
+    {
+      "key": "space",
+      "section": "preferences",
+      "label": "Что доступно на рабочем месте?",
+      "type": "single",
+      "required": true,
+      "why": "Ответ помогает настроить ваш план и рабочий режим.",
+      "options": [
+        {
+          "value": "seated",
+          "label": "Можно двигаться только сидя"
+        },
+        {
+          "value": "standing",
+          "label": "Можно встать рядом со столом"
+        },
+        {
+          "value": "walking",
+          "label": "Можно немного пройтись"
+        }
+      ]
+    },
+    {
+      "key": "limitations",
+      "section": "preferences",
+      "label": "Есть ли ограничения для самостоятельной активности?",
+      "type": "single",
+      "required": true,
+      "why": "При ограничениях автоматический подбор движений будет отключён; настройка режима и дневник останутся доступны.",
+      "options": [
+        {
+          "value": "none",
+          "label": "Нет известных ограничений"
+        },
+        {
+          "value": "injury",
+          "label": "Недавняя травма или операция"
+        },
+        {
+          "value": "restriction",
+          "label": "Специалист ограничил нагрузку"
+        },
+        {
+          "value": "unsure",
+          "label": "Не уверен(а)"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "title": "Спокойно повернуть голову",
+      "body_zone": "neck",
+      "target_zones": [
+        "neck"
+      ],
+      "duration_seconds": 60,
+      "repetitions": "По 3 раза в каждую сторону",
+      "instructions": "Сядьте устойчиво, смотрите перед собой.\nМедленно поверните голову в комфортном диапазоне, без усилия.\nВернитесь в исходное положение и повторите в другую сторону.",
+      "description": "Небольшое движение во время перерыва.",
+      "applicability": {
+        "space": [
+          "seated",
+          "standing",
+          "walking"
+        ]
+      },
+      "source_url": "https://www.nhs.uk/live-well/exercise/sitting-exercises/",
+      "difficulty": "easy",
+      "limitations": [
+        "Не выполнять при боли, усилении ощущений или индивидуальном запрете специалиста."
+      ],
+      "is_active": true
+    },
+    {
+      "title": "Мягко раскрыть плечи",
+      "body_zone": "shoulders",
+      "target_zones": [
+        "shoulders",
+        "upper_back"
+      ],
+      "duration_seconds": 60,
+      "repetitions": "5 спокойных повторений",
+      "instructions": "Сядьте устойчиво и опустите плечи.\nМягко сведите лопатки без сильного прогиба.\nРасслабьте плечи и вернитесь в удобное положение.",
+      "description": "Короткая смена положения плеч.",
+      "applicability": {
+        "space": [
+          "seated",
+          "standing",
+          "walking"
+        ]
+      },
+      "source_url": "https://www.nhs.uk/live-well/exercise/sitting-exercises/",
+      "difficulty": "easy",
+      "limitations": [
+        "Не выполнять при боли, усилении ощущений или индивидуальном запрете специалиста."
+      ],
+      "is_active": true
+    },
+    {
+      "title": "Поднять колени сидя",
+      "body_zone": "hips",
+      "target_zones": [
+        "hips",
+        "knees"
+      ],
+      "duration_seconds": 60,
+      "repetitions": "По 5 раз каждой ногой",
+      "instructions": "Сядьте на устойчивый стул, стопы поставьте на пол.\nПоднимите одну стопу, слегка согнув бедро.\nПлавно опустите и повторите другой ногой.",
+      "description": "Лёгкое движение ног сидя.",
+      "applicability": {
+        "space": [
+          "seated",
+          "standing",
+          "walking"
+        ]
+      },
+      "source_url": "https://www.nhs.uk/live-well/exercise/sitting-exercises/",
+      "difficulty": "easy",
+      "limitations": [
+        "Не выполнять при боли, усилении ощущений или индивидуальном запрете специалиста."
+      ],
+      "is_active": true
+    },
+    {
+      "title": "Движения стопами сидя",
+      "body_zone": "feet",
+      "target_zones": [
+        "feet"
+      ],
+      "duration_seconds": 60,
+      "repetitions": "По 5 раз каждой стопой",
+      "instructions": "Сядьте устойчиво.\nВытяните одну ногу в удобное положение.\nПлавно направьте носок от себя и к себе, без напряжения.\nПоставьте стопу на пол, повторите другой ногой.",
+      "description": "Мягкая разминка стоп.",
+      "applicability": {
+        "space": [
+          "seated",
+          "standing",
+          "walking"
+        ]
+      },
+      "source_url": "https://www.nhs.uk/live-well/exercise/sitting-exercises/",
+      "difficulty": "easy",
+      "limitations": [
+        "Не выполнять при боли, усилении ощущений или индивидуальном запрете специалиста."
+      ],
+      "is_active": true
+    },
+    {
+      "title": "Короткая прогулка",
+      "body_zone": "posture",
+      "target_zones": [
+        "hips",
+        "knees",
+        "feet",
+        "lower_back"
+      ],
+      "duration_seconds": 120,
+      "repetitions": "В комфортном темпе",
+      "instructions": "Отойдите от экрана.\nПройдитесь по свободному безопасному пространству в удобном темпе.\nВернитесь, когда будете готовы.",
+      "description": "Смена деятельности во время перерыва.",
+      "applicability": {
+        "space": [
+          "walking"
+        ]
+      },
+      "source_url": "https://www.osha.gov/etools/computer-workstations/work-process",
+      "difficulty": "easy",
+      "limitations": [
+        "Не выполнять при боли, усилении ощущений или индивидуальном запрете специалиста."
+      ],
+      "is_active": true
+    },
+    {
+      "title": "Сменить положение сидя",
+      "body_zone": "back",
+      "target_zones": [
+        "upper_back",
+        "lower_back",
+        "hips"
+      ],
+      "duration_seconds": 60,
+      "repetitions": "Одна спокойная смена положения",
+      "description": "Небольшая пауза без специальных растягивающих движений.",
+      "instructions": "Остановите работу за экраном.\nНайдите другую удобную опору для спины и ног.\nСмените положение без усилия, сохраняя устойчивость.",
+      "applicability": {
+        "space": [
+          "seated",
+          "standing",
+          "walking"
+        ]
+      },
+      "source_url": "https://www.osha.gov/etools/computer-workstations/work-process",
+      "difficulty": "easy",
+      "limitations": [
+        "Не выполнять через боль или вопреки индивидуальным ограничениям."
+      ],
+      "is_active": true
+    },
+    {
+      "title": "Пауза для кистей и предплечий",
+      "body_zone": "wrists",
+      "target_zones": [
+        "wrists",
+        "elbows"
+      ],
+      "duration_seconds": 60,
+      "repetitions": "Одна короткая пауза",
+      "description": "Перерыв от клавиатуры, мыши или удержания устройства.",
+      "instructions": "Прекратите набор текста или работу указателем.\nПоложите устройство и удобно расположите руки на мягкой опоре.\nРасслабьте кисти без сильного растягивания и сжатия.",
+      "applicability": {
+        "space": [
+          "seated",
+          "standing",
+          "walking"
+        ]
+      },
+      "source_url": "https://www.osha.gov/etools/computer-workstations/work-process",
+      "difficulty": "easy",
+      "limitations": [
+        "Не выполнять через боль или вопреки индивидуальным ограничениям."
+      ],
+      "is_active": true
+    }
+  ],
+  "articles": [
+    {
+      "title": "Экран и рабочее место",
+      "category": "workplace",
+      "target_zones": [
+        "neck",
+        "shoulders",
+        "upper_back"
+      ],
+      "content": "Начните с основного экрана: расположите его перед собой, подберите высоту, при которой не приходится сильно наклонять или запрокидывать голову. Увеличьте текст, если приходится приближаться. Если поднимаете ноутбук, отдельная клавиатура помогает независимо настроить положение рук. Меняйте настройки постепенно и отмечайте, стало ли удобнее.",
+      "source_url": "https://www.osha.gov/etools/computer-workstations/components/monitors"
+    },
+    {
+      "title": "Руки и устройства ввода",
+      "category": "workplace",
+      "target_zones": [
+        "wrists",
+        "elbows",
+        "shoulders"
+      ],
+      "content": "Расположите мышь рядом с клавиатурой. Найдите положение, в котором предплечья имеют удобную опору, а кисти не приходится заметно сгибать. Избегайте давления о жёсткий край стола. Настройка должна быть удобной именно вам; попробуйте несколько вариантов.",
+      "source_url": "https://www.osha.gov/etools/computer-workstations/components/keyboards"
+    },
+    {
+      "title": "Перерывы, которые вписываются в день",
+      "category": "breaks",
+      "target_zones": [],
+      "content": "Чередуйте работу за экраном с другой деятельностью. Короткие регулярные паузы легче встроить в день, чем редкий длинный перерыв. Отведите взгляд от экрана, смените положение или немного пройдитесь, если это доступно. Выберите интервал, который подходит занятиям и встречам.",
+      "source_url": "https://www.osha.gov/etools/computer-workstations/work-process"
+    },
+    {
+      "title": "Когда стоит обсудить ощущения со специалистом",
+      "category": "safety",
+      "target_zones": [],
+      "content": "Новые, сильные или нарастающие ощущения, онемение, слабость, последствия травмы и внезапные изменения зрения требуют индивидуальной оценки. Автоматический план не определяет причину симптомов. Не продолжайте движение, если оно вызывает боль или ухудшает состояние.",
+      "source_url": "https://www.osha.gov/etools/computer-workstations/work-process"
+    }
+  ]
+}

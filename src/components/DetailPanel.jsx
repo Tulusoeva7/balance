@@ -1,0 +1,4 @@
+import * as Dialog from '@radix-ui/react-dialog';
+export default function DetailPanel({open,onClose,title,children}){
+ return <Dialog.Root open={open} onOpenChange={value=>{if(!value)onClose();}}><Dialog.Portal><Dialog.Overlay className="fixed inset-0 z-50 bg-slate-900/40"/><Dialog.Content className="detail-panel fixed left-1/2 top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 shadow-2xl"><Dialog.Title className="text-2xl font-bold pr-12">{title}</Dialog.Title><Dialog.Description className="sr-only">Подробности выбранного раздела. Закройте окно, чтобы вернуться к списку.</Dialog.Description><Dialog.Close className="absolute top-4 right-4 min-h-11 min-w-11 rounded-xl bg-slate-100" aria-label="Закрыть подробности">×</Dialog.Close><div className="detail-panel-body">{children}</div></Dialog.Content></Dialog.Portal></Dialog.Root>;
+}

@@ -1,0 +1,206 @@
+[
+  {
+    "id": "b513b279-3598-5654-826a-87767cc4788b",
+    "body_zone": "posture",
+    "min_pain": 0,
+    "max_pain": 5,
+    "max_difficulty": "easy",
+    "max_items": 5,
+    "priority": 1,
+    "is_active": true,
+    "condition": {
+      "key": "screens",
+      "equals": "2"
+    },
+    "recommendation": "Расположите чаще используемый экран перед собой",
+    "reason": "Вы используете два экрана. Определите основной и поставьте его перед собой; второй расположите рядом, чтобы уменьшить необходимость долго работать с повёрнутой головой.",
+    "source_url": "https://www.osha.gov/etools/computer-workstations/positions"
+  },
+  {
+    "id": "a7561ea4-9f95-5044-b07a-fc550fde7761",
+    "body_zone": "posture",
+    "min_pain": 0,
+    "max_pain": 5,
+    "max_difficulty": "easy",
+    "max_items": 5,
+    "priority": 1,
+    "is_active": true,
+    "condition": {
+      "key": "screens",
+      "equals": "3"
+    },
+    "recommendation": "Проверьте расположение нескольких экранов",
+    "reason": "Вы используете три экрана или больше. Разместите главный экран перед собой, а остальные — поблизости. При переходе к боковому экрану разворачивайтесь всем корпусом, не удерживая шею в повороте.",
+    "source_url": "https://www.osha.gov/etools/computer-workstations/positions"
+  },
+  {
+    "id": "0d953cb4-19e0-55ef-b9f7-afeb75080782",
+    "body_zone": "posture",
+    "min_pain": 0,
+    "max_pain": 5,
+    "max_difficulty": "easy",
+    "max_items": 5,
+    "priority": 1,
+    "is_active": true,
+    "condition": {
+      "key": "chair",
+      "equals": "sofa"
+    },
+    "recommendation": "Попробуйте устойчивое рабочее место вместо дивана",
+    "reason": "Вы обычно работаете на диване. По возможности попробуйте стол и устойчивый стул: разместите устройства в пределах удобной досягаемости и проверьте опору спины и стоп. Сравните удобство без работы через дискомфорт.",
+    "source_url": "https://www.osha.gov/etools/computer-workstations/positions"
+  },
+  {
+    "id": "a068593f-f0d0-508e-91f5-23730aba376a",
+    "body_zone": "posture",
+    "min_pain": 0,
+    "max_pain": 5,
+    "max_difficulty": "easy",
+    "max_items": 5,
+    "priority": 1,
+    "is_active": true,
+    "condition": {
+      "key": "chair",
+      "equals": "stool"
+    },
+    "recommendation": "Попробуйте стул с удобной опорой спины",
+    "reason": "Вы указали табурет. При возможности попробуйте устойчивый стул с опорой спины; настройте высоту так, чтобы стопы имели опору, а плечи оставались расслабленными.",
+    "source_url": "https://www.osha.gov/etools/computer-workstations/positions"
+  },
+  {
+    "id": "ef7f2b12-4ea6-5772-bb81-888516c7d028",
+    "body_zone": "posture",
+    "min_pain": 0,
+    "max_pain": 5,
+    "max_difficulty": "easy",
+    "max_items": 5,
+    "priority": 1,
+    "is_active": true,
+    "condition": {
+      "key": "chair",
+      "equals": "standing"
+    },
+    "recommendation": "Чередуйте работу стоя с другим удобным положением",
+    "reason": "Вы обычно работаете стоя. Длительное неподвижное стояние тоже стоит прерывать: при возможности смените положение, ненадолго сядьте или пройдитесь. Не заставляйте себя стоять через усталость.",
+    "source_url": "https://www.osha.gov/etools/computer-workstations/positions"
+  },
+  {
+    "id": "98aa4c02-7429-537a-9c20-9ce76c150b36",
+    "body_zone": "posture",
+    "min_pain": 0,
+    "max_pain": 5,
+    "max_difficulty": "easy",
+    "max_items": 5,
+    "priority": 1,
+    "is_active": true,
+    "condition": {
+      "key": "chair",
+      "equals": "varies"
+    },
+    "recommendation": "Проверяйте удобство при каждой смене рабочего места",
+    "reason": "Вы меняете рабочие места. Перед началом работы проверьте положение экрана, доступность клавиатуры и мыши, опору спины и стоп. Сначала исправьте один наиболее неудобный пункт.",
+    "source_url": "https://www.osha.gov/etools/computer-workstations/positions"
+  },
+  {
+    "id": "5d645f57-1cbd-5572-adbd-d9ce02c5dd7f",
+    "body_zone": "posture",
+    "min_pain": 0,
+    "max_pain": 5,
+    "max_difficulty": "easy",
+    "max_items": 5,
+    "priority": 1,
+    "is_active": true,
+    "condition": {
+      "key": "keyboard",
+      "equals": "yes"
+    },
+    "recommendation": "Разместите отдельную клавиатуру в удобной досягаемости",
+    "reason": "Вы используете отдельную клавиатуру. Попробуйте расположить её прямо перед собой, а мышь рядом: не тянитесь вперёд и не поднимайте плечи. Проверьте, что край стола не давит на кисти.",
+    "source_url": "https://www.osha.gov/etools/computer-workstations/positions"
+  },
+  {
+    "id": "5e3a6c0a-f148-5a7e-a87f-d46f872b5ff7",
+    "body_zone": "posture",
+    "min_pain": 0,
+    "max_pain": 5,
+    "max_difficulty": "easy",
+    "max_items": 5,
+    "priority": 1,
+    "is_active": true,
+    "condition": {
+      "key": "screen_height",
+      "equals": "unsure"
+    },
+    "recommendation": "Проверьте высоту экрана во время обычной задачи",
+    "reason": "Вы пока не знаете высоту основного экрана. Прочитайте несколько строк в привычном положении: не приходится ли поднимать голову или долго наклонять её? Попробуйте положение, при котором экран удобно виден, без усилия удерживать позу.",
+    "source_url": "https://www.osha.gov/etools/computer-workstations/positions"
+  },
+  {
+    "id": "53cea2b8-f3f0-585d-8be8-c474625f6684",
+    "body_zone": "posture",
+    "min_pain": 0,
+    "max_pain": 5,
+    "max_difficulty": "easy",
+    "max_items": 5,
+    "priority": 1,
+    "is_active": true,
+    "condition": {
+      "key": "hands",
+      "equals": "unsure"
+    },
+    "recommendation": "Проверьте положение рук при наборе текста",
+    "reason": "Вы пока не уверены, как расположены руки. Во время обычного набора текста обратите внимание: расслаблены ли плечи, есть ли удобная опора и нет ли заметного перегиба кистей. Попробуйте небольшое изменение положения устройств.",
+    "source_url": "https://www.osha.gov/etools/computer-workstations/positions"
+  },
+  {
+    "id": "896339b8-9fb2-575c-b0fe-0a4e15a70c3d",
+    "body_zone": "posture",
+    "min_pain": 0,
+    "max_pain": 5,
+    "max_difficulty": "easy",
+    "max_items": 5,
+    "priority": 1,
+    "is_active": true,
+    "condition": {
+      "key": "feet_support",
+      "equals": "unsure"
+    },
+    "recommendation": "Проверьте, есть ли устойчивая опора стоп",
+    "reason": "Вы не уверены в опоре стоп. Сядьте привычным образом и проверьте, опираются ли стопы на пол или устойчивую подставку. Если нет, попробуйте доступную регулировку стула или опору, сохраняя удобство рук у стола.",
+    "source_url": "https://www.osha.gov/etools/computer-workstations/positions"
+  },
+  {
+    "id": "23c38a7a-ea39-51ab-991a-32a262afba09",
+    "body_zone": "posture",
+    "min_pain": 0,
+    "max_pain": 5,
+    "max_difficulty": "easy",
+    "max_items": 5,
+    "priority": 1,
+    "is_active": true,
+    "condition": {
+      "key": "leg_space",
+      "equals": "unsure"
+    },
+    "recommendation": "Осмотрите пространство под столом",
+    "reason": "Вы пока не знаете, достаточно ли места для ног. Проверьте, можно ли свободно поставить стопы и изменить положение ног; уберите мешающие предметы, если это возможно.",
+    "source_url": "https://www.osha.gov/etools/computer-workstations/positions"
+  },
+  {
+    "id": "f4347550-872e-5aa1-bd0c-870e56a973a8",
+    "body_zone": "posture",
+    "min_pain": 0,
+    "max_pain": 5,
+    "max_difficulty": "easy",
+    "max_items": 5,
+    "priority": 1,
+    "is_active": true,
+    "condition": {
+      "key": "schedule",
+      "equals": "variable"
+    },
+    "recommendation": "Подстраивайте начало рабочей сессии под сегодняшний график",
+    "reason": "Вы указали, что график меняется каждый день. Запускайте таймер при фактическом начале работы и планируйте короткие паузы между задачами. Если прерываетесь надолго, используйте паузу, чтобы учёт отражал вашу работу.",
+    "source_url": "https://www.hse.gov.uk/msd/dse/work-routine.htm"
+  }
+]

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="balance" x1="32" y1="24" x2="480" y2="488" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7555ee"/><stop offset=".48" stop-color="#4b75ee"/><stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#balance)"/>
+  <path d="M168 120h87c68 0 109 30 109 79 0 29-15 52-40 64 34 12 54 36 54 70 0 58-44 91-119 91h-91V120Zm58 55v67h26c35 0 53-12 53-34 0-23-18-33-52-33h-27Zm0 119v76h31c40 0 60-12 60-38 0-25-21-38-61-38h-30Z" fill="#fff" transform="translate(-15 -16)"/>
+</svg>
